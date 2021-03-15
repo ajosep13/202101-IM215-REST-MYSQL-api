@@ -26,18 +26,104 @@ response.end();
 });
 app.get('/:first_name/:last_name/:age',(request, response) => {
   //Route
-console.log('Query Parameters');
+console.log('Route Parameters');
 console.log(request.params);
 response.end();  
 })
 app.get('/id/:user_id',(request, response) => {
+  
+  console.log('GET');
   //Route
-console.log('Route Parameter');
+console.log('### Route Parameter');
 console.log(request.params);
 console.log('Body Parameters');
 console.log(request.body);
 console.log('Query Parameters');
 console.log(request.query);
+response.end();  
+})
+app.post('/id/:user_id',(request, response) => {
+  console.log('POST');
+  //Route
+console.log('### Route Parameter');
+console.log(request.params);
+//Body
+console.log('Body Parameters');
+console.log(request.body);
+//Query
+console.log('Query Parameters');
+console.log(request.query);
+
+response.end();  
+})
+app.put('/id/:user_id',(request, response) => {
+  console.log('PUT');
+  //Route
+console.log('### Route Parameter');
+console.log(request.params);
+//Body
+console.log('Body Parameters');
+console.log(request.body);
+//Query
+console.log('Query Parameters');
+console.log(request.query);
+
+response.end();  
+})
+app.patch('/id/:user_id',(request, response) => {
+  console.log('PATCH');
+  //Route
+console.log('### Route Parameter');
+console.log(request.params);
+//Body
+console.log('Body Parameters');
+console.log(request.body);
+//Query
+console.log('Query Parameters');
+console.log(request.query);
+
+response.end();  
+})
+app.delete('/id/:user_id',(request, response) => {
+  console.log('DELETE');
+  //Route
+console.log('### Route Parameter');
+console.log(request.params);
+//Body
+console.log('Body Parameters');
+console.log(request.body);
+//Query
+console.log('Query Parameters');
+console.log(request.query);
+
+response.end();  
+})
+app.head('/id/:user_id',(request, response) => {
+  console.log('HEAD');
+  //Route
+console.log('### Route Parameter');
+console.log(request.params);
+//Body
+console.log('Body Parameters');
+console.log(request.body);
+//Query
+console.log('Query Parameters');
+console.log(request.query);
+
+response.end();  
+})
+app.options('/id/:user_id',(request, response) => {
+  console.log('OPTIONS');
+  //Route
+console.log('### Route Parameter');
+console.log(request.params);
+//Body
+console.log('Body Parameters');
+console.log(request.body);
+//Query
+console.log('Query Parameters');
+console.log(request.query);
+
 response.end();  
 })
 app.listen(3333, () => {
